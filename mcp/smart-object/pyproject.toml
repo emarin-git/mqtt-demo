@@ -1,0 +1,17 @@
+[project]
+name = "smart-object"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+    "paho-mqtt>=2.1.0",
+]
+
+[project.scripts]
+smart-object = "smart_object:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
